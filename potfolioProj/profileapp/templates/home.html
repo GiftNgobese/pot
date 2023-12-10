@@ -1,0 +1,236 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/global.css' %}">
+
+{% block content %}  
+   
+<div class="position-relative text-center justify-content-center">
+
+    <div class="row  mb-5" id="home">
+        {% comment %} <img class="home-section-image" src="{% static 'images/city.jpg' %}" alt="PHOTO" style="width:100%; height:700px; object-fit:fill;"> {% endcomment %}
+        <div class="">
+            <h3 class="display-7">I'm from Johannesburg</h3>
+            <h1 class="display-3 font-weight-bold" style="font-weight: bold;">I am a web designer and machine learning enthusiast.</h1>
+        </div>
+    </div>
+
+
+    <!-- About -->
+<div class="about-section row mt-5 mb-5 " id="about">
+
+    <!-- Image -->
+    <div class="col-sm-12 col-lg-6">
+        <img class="home-section-image img-fluid" src="{% static 'images/aizen.jpeg' %}" alt="Gift">
+    </div>
+
+    <!-- Remaining info -->
+    <div class="col-sm-12 col-lg-6">
+        <h1 class="mt-5 mb-5 display-2 font-weight-bold">About</h1>
+        <p class="font-italic h5 text-muted">Legend</p>
+
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h5 class="p-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla.
+                </h5>
+            </div>
+            <div class="col-sm-12 col-lg-12">
+                <img class="home-section-image m-3" src="{% static 'images/twit.png' %}" alt="Gift" style="width:50px; height:50px;">
+                <img class="home-section-image m-3" src="{% static 'images/links.png' %}" alt="Gift" style="width:50px; height:50px;">
+                <img class="home-section-image m-3x" src="{% static 'images/face.png' %}" alt="Gift" style="width:50px; height:50px;">
+            </div>
+            <div class="col-sm-12 col-lg-12">
+                <p class="">
+                    <h3>Contact Me:</h3>
+                    <h5>Email: <a href="#">Gift@gmail.com</a></h5>
+                    <h5>Phone: (123) - 456 - 7890</h5>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <br/>
+    <hr/>   
+
+
+<div class="position-relative text-center justify-content-center second-section">
+
+    <!-- Education -->
+    <div class="row ed" id="education">
+        <h2 class="mt-5 mb-5">Education</h2>
+
+        <div class="col-sm-8 col-lg-8">Bacheclor of Science in Computer Science - University Of Zululand</div>
+        <div class="col-sm-4 col-lg-4">2009 - 2012</div>
+        <div class="col-sm-12 col-lg-12">South Africa - KZN</div>
+        <hr/>
+
+
+        <div class="col-sm-8 col-lg-8">Intro To Cybersecurity - Cisco</div>
+        <div class="col-sm-4 col-lg-4">2012 - 2013</div>
+        <div class="col-sm-12 col-lg-12">South Africa - Johannesburg</div>
+        <hr/>
+
+
+        <div class="col-sm-8 col-lg-8">Data Science - IBM</div>
+        <div class="col-sm-4 col-lg-4">2012 - 2013</div>
+        <div class="col-sm-12 col-lg-12">South Africa - Johannesburg</div>
+        <hr/>
+
+        
+        <div class="col-sm-8 col-lg-8">Django - Google</div>
+        <div class="col-sm-4 col-lg-4">2014-2015</div>
+        <div class="col-sm-12 col-lg-12">South Africa - Cape Town</div>
+
+    </div>
+
+    
+    <!-- Skills -->
+    <div class="third-section" id="skills">
+        <h1 class="mt-5 mb-5">Skills</h1>
+
+        <div class="skill">
+            <span>HTML</span><br/>
+            <div class="percentage">88%</div>
+            <progress value="88" max="100"></progress>
+        </div>
+
+
+        <div class="skill">
+            CSS3<br/>
+            <progress value="80" max="100"></progress>
+        </div>
+
+        <div class="skill">
+            Python<br/>
+            <progress value="92" max="100"></progress>
+        </div>
+
+        <div class="skill">
+            Java <br/>
+            <progress value="72" max="100"></progress>
+        </div>
+
+        <div class="skill">
+            Javascript <br/>
+            <progress value="70" max="100"></progress>
+        </div>
+
+        <div class="skill">
+            SQL Database <br/>
+            <progress value="65" max="100"></progress>
+        </div>
+
+        <div class="skill">
+            Django <br/>
+            <progress value="79" max="100"></progress>
+        </div>
+
+        <div class="skill">
+            React JS <br/>
+            <progress value="73" max="100"></progress>
+        </div>
+
+        <div class="skill">
+            Next JS <br/>
+            <progress value="66" max="100"></progress>
+        </div>
+
+        <div class="skill">
+            Power BI <br/>
+            <progress value="56" max="100"></progress>
+        </div>
+
+        <div class="skill"></div>
+
+
+    </div>
+
+
+    <!-- Services -->
+    <div class="row fourth-section" id="services">
+        <div class="fifth-section">
+            <h1>My Services</h1>
+
+            </div>
+        <div class="col-sm-12 col-lg-4">
+            <img class="home-section-image m-3" src="{% static 'images/design.png' %}" alt="Gift" style="width:80px; height:80px;"><br/>
+            <h4>UI/UX Design</h4>
+            <h4>Mobile App Design</h4>
+            <h4>Responsive Design</h4>
+            </div>
+        <div class="col-sm-12 col-lg-4">
+            <img class="home-section-image m-3" src="{% static 'images/dev.png' %}" alt="Gift" style="width:80px; height:80px;"><br/>
+            <h4>Web Development</h4>
+            <h4>App Development</h4>
+            </div>
+        <div class="col-sm-12 col-lg-4">
+            <img class="home-section-image m-3" src="{% static 'images/code.png' %}" alt="Gift" style="width:80px; height:80px;"><br/>
+            <h4>HTML/CSS</h4>
+            <h4>Prototyping</h4>
+            <h4>User Testing</h4>
+            </div>
+    </div>
+
+
+
+
+    <!-- Past Projects -->
+    <div class="sixth-section" id="projects">
+        <h1>Checkout a few of my works</h1>
+    </div>
+
+    <div class="">
+        <div class=""></div>
+        <div class=""></div>
+    </div>
+
+
+    <!-- Competion -->
+    <div class="row seventh-section" id="competition">
+        <h1>Hackathons & Datathons</h1>
+
+        <div class="col-sm-6 col-lg-6">
+            <p>
+                CSIR DIRISA Student Datathon 2023/21
+                Participant (1/4 Team University of Zululand)
+                Project : SME Business Quality Guidance
+                
+                We created a state of the art machine learning solution for our government, to determine those individuals that are most vulnerable to Covid-19 in our municipal wards. We analysed South African census data and identified a problem.
+                Our team won the 3rd position of the competition and we are invited to participate in the Global SC21 Datathon representing South Africa altogether as a team with the problem solvers from the University of Johannesburg (UJ) and University of the Witwatersrand (WITS) as the winners of the DIRISA Datathon.
+                </p>
+        </div>
+
+        <p>
+
+
+        </p>
+
+        <div class="col-sm-6 col-lg-6"><img class="home-section-image m-3" src="{% static 'images/comp-2.png' %}" alt="Gift" style="width:100%; height:300px;"><br/></div>
+    </div>
+
+
+
+</div>
+  
+{% endblock %}
+
+{% comment %} <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script> {% endcomment %}
